@@ -4,9 +4,9 @@ def send_email(messange, reciplient, sender='university.help@gmail.com'):
     elif sender == reciplient :
         print('Нельзя отправить письмо самому себе')
     elif sender == "university.help@gmail.com":
-        print(f"Письмо успешно отправлено с адреса {sender} на адрес {reciplient}.")
+        print('Письмо успешно отправлено с адреса ',{sender}, 'на адрес', {reciplient})
     elif sender != "university.help@gmail.com":
-        print(f"НЕСТАНДАРТНЫЙ ОТПРАВИТЕЛЬ! Письмо отправлено с адреса {sender} на адрес {reciplient}.")
+        print('НЕСТАНДАРТНЫЙ ОТПРАВИТЕЛЬ! Письмо отправлено с адреса', {sender}, ' на адрес', {reciplient})
 
 
 send_email('Это сообщение для проверки связи', 'vasyok1337@gmail.com')
